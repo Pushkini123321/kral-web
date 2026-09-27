@@ -1,0 +1,252 @@
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        /* =========================
+           WEBSITE BACKGROUND
+           ========================= */
+
+        body {
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/081/586/954/small/abstract-soft-pastel-wave-background-minimalist-wallpaper-use-for-templates-banners-posters-covers-flyers-websites-pages-events-ads-and-more-vector.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+
+            margin: 0;
+        }
+
+
+        /* Smooth scrolling */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        /* =========================
+           IMAGES
+           ========================= */
+
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+
+        .image-box {
+            position: relative;
+            width: 400px;
+            height: 200px;
+        }
+
+
+        .image-box img {
+            width: 400px;
+            height: 200px;
+
+            display: block;
+
+            transition: transform 0.3s;
+        }
+
+
+        /* Image gets bigger when hovered */
+
+        .image-box:hover img {
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           HOVER TEXT
+           ========================= */
+
+        .description {
+            position: absolute;
+
+            right: 410px;
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            white-space: nowrap;
+
+            font-size: 24px;
+            font-weight: bold;
+
+            opacity: 0;
+
+            transition: opacity 0.3s;
+        }
+
+
+        /* Show text when hovering */
+
+        .image-box:hover .description {
+            opacity: 1;
+        }
+
+
+        /* Second image text goes RIGHT */
+
+        .image-box.second .description {
+            left: 410px;
+            right: auto;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         TITLE
+         ========================= -->
+
+    <div style="display: grid; place-items: center; height: 15vh;">
+
+        <h1>
+            HELLO AND WELCOME TO KRAL'S WEBSITE!
+        </h1>
+
+    </div>
+
+
+    <!-- =========================
+         INTRO
+         ========================= -->
+
+    <h1>Here is things you can do</h1>
+
+
+    <h2>
+        👉1) You can roll kral to see what mood you get! be carefull tho..
+    </h2>
+
+
+    <h2>
+        👉2) You can go below and read the kral manga which is very popular especially in hylers
+    </h2>
+
+
+    <h2>
+        👉3) i hope you enjoy kral.
+        also <span style="color: red;">rein</span> why are you here
+    </h2>
+
+
+    <!-- =========================
+         CHOOSE
+         ========================= -->
+
+    <div style="display: grid; place-items: center; height: 20vh;">
+
+        <h1>
+            <span style="color: rgb(0, 153, 255);">
+                Choose
+            </span>
+        </h1>
+
+    </div>
+
+
+    <!-- =========================
+         IMAGE MENU
+         ========================= -->
+
+    <div class="images">
+
+
+        <!-- FIRST IMAGE -->
+
+        <div class="image-box">
+
+            <a href="#manga">
+
+                <img
+                    src="kral manga.png"
+                    alt="kral manga"
+                >
+
+            </a>
+
+
+            <div class="description">
+                Read kral's manga
+            </div>
+
+        </div>
+
+
+        <!-- SECOND IMAGE -->
+
+        <div class="image-box second">
+
+            <a href="#roll">
+
+                <img
+                    src="82b7e0bf-4718-40df-8444-9f3bacb6cd7d.png"
+                    alt="Roll kral"
+                >
+
+            </a>
+
+
+            <div class="description">
+                Roll kral
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================
+         MANGA SECTION
+         ========================= -->
+
+    <div style="margin-top: 600px;">
+
+        <h1 id="manga">
+            Kral's Manga
+        </h1>
+
+
+        <p>
+            IMAGES AND MANGA GOES HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         ROLL SECTION
+         ========================= -->
+
+    <div style="margin-top: 600px;">
+
+        <h1 id="roll">
+            Roll Kral
+        </h1>
+
+
+        <p>
+            Coming soon!
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>
+```
